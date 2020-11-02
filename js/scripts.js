@@ -32,3 +32,18 @@ Destination.prototype.displayDestination = function () {
     "."
   );
 };
+
+// User Interface Logic --------
+let tripLog = new TripLog();
+
+$(document).ready(function () {
+  $("form#new-trip").submit(function (event) {
+    event.preventDefault();
+    const inputtedCity = $("input#new-city").val();
+    const inputtedFood = $("input#new-food").val();
+    const inputtedLandmark = $("input#landmark").val();
+    let newTrip = new Destination(inputtedCity, inputtedFood, inputtedLandmark);
+    tripLog.addDestination(newTrip);
+    console.log(tripLog.destinations);
+  });
+});
