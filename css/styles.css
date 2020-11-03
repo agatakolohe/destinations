@@ -1,3 +1,26 @@
 #show-destination {
   display: none;
 }
+.jumbotron {
+  text-align: center;
+  background-color: #007272;
+}
+.jumboimg {
+  height: 70%;
+  width: 70%;
+  border: solid white;
+  border-style: inset;
+  border-width: 5px;
+}
+body {
+  background: #008b8b;
+  color: white;
+}
+button {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+li:hover {
+  color: darkturquoise;
+  cursor: context-menu;
+}

@@ -9,25 +9,54 @@
   </head>
   <body>
     <div class="container">
-      <h1>My Trips</h1>
+      <div class="jumbotron">
+        <h1>My Trip Log</h1>
+        <img
+          src="img/undraw_adventure_4hum.svg"
+          alt="Person and globe image"
+          class="jumboimg"
+        />
+      </div>
       <h2>Add a new Trip</h2>
       <form id="new-trip">
-        <label for="new-city">New City</label>
-        <input type="text" id="new-city" /> <br />
-        <label for="new-food">Famous Food</label>
-        <input type="text" id="new-food" /> <br />
-        <label for="landmark">Famous Landmark</label>
-        <input type="text" id="landmark" /> <br />
-        <button type="submit" class="btn btn-dark">Add Trip</button>
+        <div class="form-group">
+          <label for="new-city">New City</label>
+          <input
+            type="text"
+            id="new-city"
+            placeholder="Ex: Seattle"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="new-food">Famous Food</label>
+          <input
+            type="text"
+            id="new-food"
+            placeholder="Ex: Coffee"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="landmark">Famous Landmark</label>
+          <input
+            type="text"
+            id="landmark"
+            placeholder="Ex: Space Needle"
+            class="form-control"
+          />
+        </div>
+        <button type="submit" class="btn btn-outline-light">Add Trip</button>
       </form>
 
-      <h2>Trips</h2>
+      <h2>My Trips:</h2>
       <ul id="destinations"></ul>
 
       <div id="show-destination">
-        <p>City Name:<span class="city-name"></span></p>
-        <p>Famous Food<span class="famous-food"></span></p>
-        <p>Famous Landmark<span class="famous-landmark"></span></p>
+        <p>City Name: <span class="city-name"></span></p>
+        <p>Famous Food: <span class="famous-food"></span></p>
+        <p>Famous Landmark: <span class="famous-landmark"></span></p>
+        <div id="buttons"></div>
       </div>
     </div>
   </body>
